@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -----------    Custom Scroll Bar     -----------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 8px;
+  border: 2px solid #6f00ff; */
+    border-radius: 8px;
+    background: linear-gradient(transparent, #6f00ff);
+}
+
+
+/* -----------    Custom Scroll Bar End     -----------*/
+
+
+
+/* Footer Style */
+
+.main-footer-class {
+    margin-top: 10% !important;
+}
+
+.footer-logo {
+    width: 10vw !important;
+}
+
+
+
+/* -----------    Explore Section     -----------*/
+
+
+.Explore-heading {
+    color: #fff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-style: italic;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.Explore-heading::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8rem;
+    background-color: #6f00ff;
+    height: 5px;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+}
+
+
+/* -----------    Explore Section End     -----------*/
+
+/* -----------    build pc Section     -----------*/
+
+.build-pc-heading {
+    color: #fff;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-style: italic;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.build-pc-heading::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12rem;
+    background-color: #6f00ff;
+    height: 5px;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* -----------    Explore Section End     -----------*/
+
+.active::after {
+    height: 5px !important;
+    content: "" !important;
+    position: absolute !important;
+    background-color: #6f00ff !important;
+    bottom: 1% !important;
+    width: 100% !important;
+}
+
+#active::after {
+    height: 5px !important;
+    content: "" !important;
+    position: absolute !important;
+    background-color: #6f00ff !important;
+    bottom: 1% !important;
+    width: 100% !important;
+}
+
+body {
+    background-color: #141414 !important;
+}
+
+.navbar {
+    padding-bottom: 0rem !important;
+    padding-top: 0rem !important;
+    background: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.nav-list {
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    margin-left: 35px;
+    border: 3px solid transparent;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.nav-container li:last-child {
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    position: absolute;
+    right: 5%;
+}
+
+.nav-list:last-child::before {
+    height: 0px;
+    width: 0%;
+    background-color: transparent;
+}
+
+.nav-container .btn-outline-success {
+    color: #fff;
+    border-color: #6f00ff;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.nav-container .btn-outline-success:hover {
+    background-color: #6f00ff;
+}
+
+.sign-up {
+    margin-right: 10px;
+}
+
+.nav-list::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #6f00ff;
+    width: 0%;
+    bottom: 1%;
+}
+
+.nav-list:hover::before {
+    width: 100%;
+}
+
+nav .navbar-toggler {
+    border: 2px solid transparent !important;
+}
+
+nav .navbar-toggler {
+    border: 2px solid #6f00ff !important;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #6f00ff, 0 0 0.4rem #6f00ff, 0 0 0.4rem #6f00ff;
+}
+
+.top-content {
+    font-family: "Titillium Web", sans-serif;
+    font-style: italic;
+}
+
+.top-content p {
+    font-size: 1.4rem;
+}
+
+.main-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #000;
+}
+
+.main-page::before {
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main-page .top-content {
+    z-index: 888;
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main-page video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    margin: 2rem;
+}
+
+.card-body {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.explore-crd {
+    background-color: #212529 !important;
+    border-radius: 0.5em !important;
+}
+
+.cards-icons {
+    width: 2rem;
+    margin-right: 5px;
+}
+
+
+
+/* -----------      Login style      -----------*/
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.login-div {
+    margin-top: 18vh !important;
+}
+
+.login-input {
+    border-color: #6f00ff !important;
+}
+
+#make-account-a {
+    text-decoration: none;
+    color: #6f00ff !important;
+}
+
+
+
+
+
+
+
+
+/* -----------      buildpc style      -----------*/
+
+.build-pc-section {
+    margin-top: 3rem !important;
+}
+
+.pc-bucket {
+    width: 55rem;
+    margin-top: 1.5rem;
+}
+
+.components-notice {
+    width: 90%;
+    color: white;
+    background-color: #212529 !important;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+#pc-component-note-span {
+    color: #6f00ff;
+}
+
+.select-component-box {
+    color: white;
+}
+
+.pc-bucket .card {
+    border-radius: 0.5em;
+    margin: 1rem;
+}
+
+
+/* -----------      buildpc style end      -----------*/
+
+
+
+/* about */
+#member-card {
+    margin: 0px 12px !important;
+    margin-top: 2rem !important;
+}
+
+
+
+/* -----------      autobuild style      -----------*/
+
+.slider-label {
+    margin-top: 4rem !important;
+}
+
+.products-table-1 {
+    width: 95vw;
+    margin-top: 4rem !important;
+}
+
+.budget-slider input::-webkit-slider-thumb ::before {
+    content: "hello" !important;
+    background-color: white !important;
+}
+
+
+.form-range::-webkit-slider-thumb {
+    background-color: #6f00ff !important;
+    border: solid 1px white !important;
+  }
+  
+  .form-range::-moz-range-thumb {
+    background-color: #6f00ff !important;
+  }
+  
+  .form-range::-ms-thumb {
+    background-color: #6f00ff !important;
+  }
+  
+  .table-product-image-1 {
+      width: 3vw;
+      height: 6vh;
+      border-radius: 0.3rem;
+  }
+
+/* -----------      autobuild style end      -----------*/
+
+
+#guide-ul-1 {
+    text-align: start;
+    margin-top: 2rem;
+}
+
+
+/* Previous Build History page style */
+
+#history-container {
+    margin-top: 5% !important;
+}
+
+/* Search Component Page Style */
+
+.search-input {
+    border-color: #6f00ff !important;
+}
+
+.search-result-ul {
+    border: solid #6f00ff 1px !important;
+}
+
+.search-result-ul > li {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.search-radio {
+    margin-right: 50% !important;
+}
+
+
+/* Second Hand PC Page Style */
+
+.sell-pc-container {
+    margin-top: 2rem !important;
+}
+
+
+
+/* rate Builds style */
+.comments-avtar {
+    height: 2.8rem;
+    width: 2.8rem;
+    float: left !important;
+}
+/* rate builds style ends */
+
+
+/* Contact us style start */
+
+.contact-input {
+ border-color: #6f00ff !important;
+}
+
+
+/* Contact us style end */
+
+
+
+
+
+
+/* -----------      Animations      -----------*/
+
+
+/* -----------      Media Query      -----------*/
+
+
+@media screen and (max-width: 991px) {
+    .nav-list {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .nav-list::before {
+        height: 5px;
+        content: "";
+        background-color: #6f00ff;
+        width: 0%;
+        bottom: 1%;
+        transform: translate(-50%, -50%);
+    }
+    .nav-list:hover::before {
+        width: 20%;
+    }
+    .nav-container li:last-child {
+        position: static;
+    }
+    nav .container-fluid {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .navbar-nav {
+        height: 40rem;
+    }
+
+    .active::after {
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #6f00ff;
+        width: 20%;
+        bottom: 1%;
+        transform: translate(-50%, -50%);
+    }
+    #active::after {
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #6f00ff;
+        width: 20%;
+        bottom: 1%;
+        transform: translate(-50%, -50%);
+    }
+
+    .build-pc-section {
+        margin-top: 6rem !important;
+    }
+
+    #input-text-group {
+        width: 8rem !important;
+    }
+
+    #guide-img {
+        width: 15rem !important;
+        height: 8rem !important;
+    }
+
+    #sell-card-img {
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+        width: 90% !important;
+    }
+
+    #sell-info-card {
+        margin-top: 2rem !important;
+        width: 90% !important;
+        margin-right: 8% !important;
+    }
+
+    #member-card{
+        margin: auto !important;
+        margin-top: 1rem !important;
+    }
+
+    #users-pc-card{
+       min-width: 30rem !important;
+    }
+
+}
